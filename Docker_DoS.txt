@@ -1,0 +1,4 @@
+FROM python:2.7
+ADD mitm_dos.py /
+RUN pip install scapy
+CMD [ "python", "./mitm_dos.py" ]

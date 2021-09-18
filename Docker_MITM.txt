@@ -1,0 +1,4 @@
+FROM python:2.7
+ADD mitm_backup.py /
+RUN pip install scapy
+CMD [ "python", "./mitm_backup.py" ]
